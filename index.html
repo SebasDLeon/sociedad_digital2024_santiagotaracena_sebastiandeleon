@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenidos Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contenidos Tecnología</h1>
+        <p class="authors">Santiago Taracena Bustamante<br>Jorge Sebastián De León Chávez</p>
+        <div class="buttons">
+            <a href="#"" class="button" onclick="showPage('bimestre1')">I BIMESTRE</a>
+            <a href="#" class="button" onclick="showPage('bimestre2')">II BIMESTRE</a>
+            <a href="#" class="button" onclick="showPage('bimestre3')">III BIMESTRE</a>
+        </div>
+    </div>
+
+    <!-- Página I Bimestre -->
+    <section id="bimestre1">
+        <h2 class="section-title">I BIMESTRE</h2>
+        <p>Contenidos del primer bimestre de la clase de tecnología:</p>
+        <ol>
+            <li>Sociedad Digital</li>
+            <li>Código ASCII</li>
+            <li>Pirámide DIKW</li>
+        </ol>
+    </section>
+
+    <!-- Página II Bimestre -->
+    <section id="bimestre2">
+        <h2 class="section-title">II BIMESTRE</h2>
+        <p>Contenidos del segundo bimestre de la clase de tecnología:</p>
+        <ol>
+            <li>Tipos de Software</li>
+            <li>Placa Base</li>
+        </ol>
+    </section>
+
+    <!-- Página III Bimestre -->
+    <section id="bimestre3">
+        <h2 class="section-title">III BIMESTRE</h2>
+        <p>Contenidos del tercer bimestre de la clase de tecnología:</p>
+        <ol>
+            <li>Tipos de Redes</li>
+            <li>Conceptos de Internet</li>
+        </ol>
+    </section>
+
+    <!-- Página Sociedad Digital -->
+    <section id="sociedadDigital">
+        <h2 class="section-title">Sociedad Digital</h2>
+        <!-- Contenido aquí -->
+    </section>
+
+    <!-- Página Código ASCII -->
+    <section id="codigoAscii">
+        <h2 class="section-title">Código ASCII</h2>
+        <!-- Contenido aquí -->
+    </section>
+
+    <!-- Página Pirámide DIKW -->
+    <section id="piramideDikw">
+        <h2 class="section-title">Pirámide DIKW</h2>
+        <!-- Contenido aquí -->
+    </section>
+
+    <!-- Página Tipos de Software -->
+    <section id="tiposDeSoftware">
+        <h2 class="section-title">Tipos de Software</h2>
+        <!-- Contenido aquí -->
+    </section>
+
+    <!-- Página Placa Base -->
+    <section id="placaBase">
+        <h2 class="section-title">Placa Base</h2>
+        <!-- Contenido aquí -->
+    </section>
+
+    <!-- Página Tipos de Redes -->
+    <section id="tiposDeRedes">
+        <h2 class="section-title">Tipos de Redes</h2>
+        <!-- Contenido aquí -->
+    </section>
+
+    <!-- Página Conceptos de Internet -->
+    <section id="conceptosDeInternet">
+        <h2 class="section-title">Conceptos de Internet</h2>
+        <!-- Contenido aquí -->
+    </section>
+
+    <script>
+        function showPage(page) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            // Mostrar la sección seleccionada
+            document.getElementById(page).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
