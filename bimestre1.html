@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I BIMESTRE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>I BIMESTRE</h1>
+    <div class="content-button">
+      <a href="#" class="button small" onclick="showPage('home')">Contenidos</a>
+    </div>
+    <div class="topics">
+      <a href="#" class="button large" onclick="showPage('sociedadDigital')">Sociedad Digital</a>
+      <a href="#" class="button large" onclick="showPage('codigoAscii')">Código ASCII</a>
+      <a href="#" class="button large" onclick="showPage('piramideDikw')">Pirámide DIKW</a>
+    </div>
+    <div class="content-button">
+      <a href="BimestreI.html" class="button small" onclick="go.(BimestreI.html)">Página principal</a>
+    </div>
+  </div>
+
+  <!-- Página de Contenidos -->
+  <section id="home" class="active">
+    <h2 class="section-title">Contenidos del Primer Bimestre</h2>
+    <ol>
+      <li><a href="#" onclick="showPage('sociedadDigital')">Sociedad Digital</a></li>
+      <li><a href="#" onclick="showPage('codigoAscii')">Código ASCII</a></li>
+      <li><a href="#" onclick="showPage('piramideDikw')">Pirámide DIKW</a></li>
+    </ol>
+  </section>
+
+  <!-- Página Sociedad Digital -->
+  <section id="sociedadDigital">
+    <h2 class="section-title">Sociedad Digital</h2>
+    <p>La <strong>sociedad digital</strong> se refiere a un ecosistema complejo y dinámico donde las interacciones humanas, económicas y sociales están mediadas en gran medida por tecnologías digitales. Este entorno emergente ha sido impulsado por la rápida expansión de internet, los dispositivos móviles, las plataformas de redes sociales y una amplia gama de herramientas digitales que han transformado la forma en que las personas se comunican, trabajan, aprenden y acceden a la información.</p>
+    <p>En el contexto de la <strong>sociedad digital</strong>, fenómenos como la <strong>economía digital</strong>, la <strong>alfabetización digital</strong>, y la <strong>seguridad cibernética</strong> juegan un papel crucial. La economía digital describe el uso de tecnologías digitales en todos los aspectos de la economía, desde la producción hasta la distribución y el consumo de bienes y servicios. Mientras tanto, la alfabetización digital implica la capacidad de usar eficazmente estas herramientas para participar activamente en la sociedad.</p>
+    <p>Asimismo, la transición a una sociedad digital plantea desafíos significativos en términos de <strong>privacidad de datos</strong>, <strong>regulación tecnológica</strong> y <strong>desigualdades digitales</strong>, donde ciertas comunidades o individuos pueden verse marginados debido a la falta de acceso o habilidades tecnológicas. En este sentido, la transformación digital no solo reconfigura las infraestructuras tecnológicas, sino también los procesos culturales, sociales y políticos, requiriendo un enfoque multidisciplinario para comprender su impacto integral.</p>
+  </section>
+
+  <!-- Página Código ASCII -->
+  <section id="codigoAscii">
+    <h2 class="section-title">Código ASCII</h2>
+    <p>El <strong>Código ASCII</strong> (Código Estándar Americano para el Intercambio de Información) es uno de los pilares fundamentales en el ámbito de la informática y las telecomunicaciones. Este estándar de codificación, desarrollado en la década de 1960, fue diseñado para permitir que las computadoras y otros dispositivos electrónicos pudieran comunicarse utilizando un lenguaje común. ASCII asigna a cada carácter —ya sean letras, números, símbolos o caracteres de control— un valor numérico en el rango de 0 a 127, permitiendo así la representación uniforme de texto y comandos.</p>
+    <p>Este sistema es esencial para la <strong>interoperabilidad</strong> entre diferentes dispositivos y plataformas, ya que establece una base común para la codificación de información textual. A través de ASCII, se facilita la conversión de caracteres de texto a secuencias de bits, las cuales son entendibles por las máquinas. Por ejemplo, la letra 'A' está representada por el número 65 en ASCII, y este código binario se interpreta de la misma manera en cualquier sistema que utilice el estándar.</p>
+    <p>El <strong>Código ASCII</strong> también fue la base para el desarrollo de otros estándares más complejos, como <strong>UTF-8</strong> y <strong>Unicode</strong>, que permiten la representación de una mayor cantidad de caracteres, incluidos símbolos especiales y alfabetos de diferentes idiomas. En definitiva, aunque limitado en su alcance original, ASCII sigue siendo un componente crucial en la estructura de las comunicaciones digitales modernas.</p>
+  </section>
+
+  <!-- Página Pirámide DIKW -->
+  <section id="piramideDikw">
+    <h2 class="section-title">Pirámide DIKW</h2>
+    <p>La <strong>Pirámide DIKW</strong> es un modelo conceptual que describe cómo los <strong>datos</strong> se transforman en <strong>información</strong>, luego en <strong>conocimiento</strong> y finalmente en <strong>sabiduría</strong>. Esta pirámide se usa a menudo en disciplinas como la ciencia de la información, la gestión del conocimiento y la toma de decisiones.
+    <ul>
+      <li><strong>Datos:</strong> Son hechos crudos, sin procesar.</li>
+      <li><strong>Información:</strong> Los datos se organizan para darles significado.</li>
+      <li><strong>Conocimiento:</strong> La información se interpreta y contextualiza.</li>
+      <li><strong>Sabiduría:</strong> El conocimiento se aplica de manera práctica.</li>
+    </ul>
+    </p>
+  </section>
+
+  <script>
+    function showPage(page) {
+      // Ocultar todas las secciones
+      document.querySelectorAll('section').forEach(function(section) {
+        section.classList.remove('active');
+      });
+      // Mostrar la sección seleccionada
+      document.getElementById(page).classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
